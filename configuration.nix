@@ -26,15 +26,9 @@
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
   networking = {
+    # useDHCP = true;
     hostName = "homeserver";
     networkmanager.enable = true; #enable networking
-    interfaces.enp2s0 = {
-      ipv4.addresses = [{
-        address = "192.168.1.12";
-        prefixLength = 24;
-      }];
-    };
-
     #Firewall
     # Open ports in the firewall.
     #firewall.allowedTCPPorts = [ 8123 ]; #home assitant port
